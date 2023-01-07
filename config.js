@@ -55,9 +55,8 @@ global.limitawal = {
 }
 
 // Fake
-global.thumb = fs.readFileSync('https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg')
-global.faall = fs.readFileSync('https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg')
-
+global.thumb = fs.readFileSync('./media/image/naze.jpg')
+global.faall = fs.readFileSync('./media/image/fake.jpg')
 // Url
 global.mygit = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew'
 global.myyt = 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew'
