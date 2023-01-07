@@ -4630,7 +4630,723 @@ case 'sound160':
 case 'sound161':
 naze_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
 await naze.sendMessage(m.chat, { audio: naze_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+ break
+case 'alive': case 'panel': {
+    naze.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
+    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
+    caption: `╔●●🔥PN Whatsapp BOT\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :@${ownernya.split('@')[0]}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :0783037971\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\n💖💖💖💖\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+    footer: `PN Whatsapp BOT`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    naze.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+            break
+case 'bbb': case 'pn': {
+    naze.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `alive`, buttonText: {displayText: '𝐀𝐋𝐈𝐕𝐄'}, type: 1},
+    {buttonId: `owner`, buttonText: {displayText: '𝐎𝐖𝐍𝐄𝐑'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/bH371tY/Picsart-22-10-02-11-18-47-805.jpg` },
+    caption: `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
+
+*🪀𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐄𝐋 𝐋𝐈𝐍𝐊🪀*
+https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+
+*🪀𝐁𝐎𝐓 𝐒𝐂𝐑𝐈𝐏𝐓 𝐋𝐈𝐍𝐊🪀*
+https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
+
+*🪀𝐁𝐎𝐓 𝐇𝐄𝐋𝐏𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏🪀*
+https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
+
+💠💠💠💠💠💠💠💠💠💠💠
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    naze.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+            break
+                case 'logo': case 'logo1': {
+                	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+naze.sendMessage(from, { react: { text: `🖼️`, key: m.key }})
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `Hi ${pushname}`,
+                    description: `🔎༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n𝐋𝐎𝐆𝐎 𝐌𝐀𝐊𝐈𝐍𝐆 𝐒𝐈𝐒𝐓𝐄𝐌\nඔබට අවශ්‍ය ලොගෝ එක තෝරන්න🔎`,
+                    buttonText: "තෝරන්න🗒️",
+                    footerText: `${global.botname}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "Initial Features Of Bot 🦁",
+								"rows": [
+									{
+										"title": "LION",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `Lion ${text}`
+									}
+								]
+							},
+							{
+								"title": "Bot Features 🦁",
+								"rows": [
+									{
+										"title": "candy",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `candy ${text}`
+									},
+									{
+										"title": "8bit",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `8bit ${text}`
+										},
+									{
+										"title": "horror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `horror ${text}`
+										},
+										{
+										"title": "hoorror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `hoorror ${text}`
+										},
+										{
+										"title": "blackpinkneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpinkneon ${text}`
+									},
+									{
+										"title": "retro",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `retro ${text}`
+									},
+									{
+										"title": "deepsea️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `deepsea ${text}`
+									},
+									{
+										"title": "scifi",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `scifi ${text}`
+									},
+									{
+										"title": "fiction",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fiction ${text}`
+									},
+									{
+										"title": "berry️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `berry ${text}`
+									},
+									{
+										"title": "fruitjuice",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fruitjuice ${text}`
+									},
+									{
+										"title": "biscuit️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `biscuit ${text}`
+									},
+										{
+											"title": "wood",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `wood ${text}`
+										},
+										{
+											"title": "chocolate",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `chocolate ${text}`
+										},
+										{
+										"title": "matrix️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `matrix ${text}`
+									     },
+									{
+										"title": "blood",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blood ${text}`
+									     },
+										{
+											"title": "halloween",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `halloween ${text}`
+										},
+										{
+										"title": "darkgold",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `darkgold ${text}`
+									},
+										{
+											"title": "firework️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `firework ${text}`
+										},
+										{
+											"title": "skeleton️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `skeleton ${text}`
+										},
+										{
+										"title": "sand",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sand ${text}`
+									},
+										{
+											"title": "leaves",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `leaves ${text}`
+										
+								
+							},
+								{
+										"title": "magma",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `magma ${text}`
+									},
+									{
+										"title": "lava",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `lava ${text}`
+										},
+									{
+										"title": "rock",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `rock ${text}`
+										},
+										{
+										"title": "bloodglas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `bloodglas ${text}`
+										},
+										{
+										"title": "underwater",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `underwater ${text}`
+									},
+									{
+										"title": "textmaker",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `textmaker ${text}`
+									},
+									{
+										"title": "honey",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `honey ${text}`
+									},
+									{
+										"title": "ice",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `ice ${text}`
+									},
+									{
+										"title": "watercolor",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `watercolor ${text}`
+									},
+									{
+										"title": "multicolor",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `multicolor ${text}`
+									},
+									{
+										"title": "snow",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `snow ${text}`
+									},
+									{
+										"title": "harrypot",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `harrypot ${text}`
+									},
+										{
+											"title": "harrypotter",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `harrypotter ${text}`
+										},
+										{
+											"title": "brokenglass",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `brokenglass ${text}`
+										},
+										{
+										"title": "waterpipe",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `waterpipe ${text}`
+									     },
+									{
+										"title": "spooky",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `spooky ${text}`
+									     },
+										{
+											"title": "circuit",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `circuit ${text}`
+										},
+										{
+										"title": "metallic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `metallic ${text}`
+									},
+										{
+											"title": "sparklechristmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sparklechristmas ${text}`
+										},
+										{
+											"title": "demon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `demon ${text}`
+										},
+										{
+										"title": "christmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `christmas ${text}`
+									},
+										{
+											"title": "3dchristmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dchristmas ${text}`
+										},{
+										"title": "3dbox",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dbox ${text}`
+									},
+									{
+										"title": "waterdrop",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `waterdrop ${text}`
+										},
+									{
+										"title": "papercut",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `papercut ${text}`
+										},
+										{
+										"title": "transformer",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `transformer ${text}`
+										},
+										{
+										"title": "neondevil",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neondevil ${text}`
+									},
+									{
+										"title": "3davengers",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3davengers ${text}`
+									},
+									{
+										"title": "3dstone",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dstone ${text}`
+									},
+									{
+										"title": "3dstone2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dstone2 ${text}`
+									},
+									{
+										"title": "summertime",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `summertime ${text}`
+									},
+									{
+										"title": "thunder",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `thunder ${text}`
+									},
+									{
+										"title": "window",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `window ${text}`
+									},
+									{
+										"title": "graffiti",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `graffiti ${text}`
+									},
+										{
+											"title": "graffitibike",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `graffitibike ${text}`
+										},
+										{
+											"title": "pornhub",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `pornhub ${text}`
+										},
+										{
+										"title": "glitch",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch ${text}`
+									     },
+									{
+										"title": "blackpink",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpink ${text}`
+									     },
+										{
+											"title": "glitch2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch2 ${text}`
+										},
+										{
+										"title": "glitch3",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch3 ${text}`
+									},
+										{
+											"title": "3dspace",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dspace ${text}`
+										},
+										{
+											"title": "3dneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dneon ${text}`
+										},
+										{
+										"title": "greenneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `greenneon ${text}`
+									},
+										{
+											"title": "bokeh",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `bokeh ${text}`
+										
+								
+						    	},
+								{
+										"title": "holographic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `holographic ${text}`
+									},
+									{
+										"title": "bear",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `bear ${text}`
+										},
+									{
+										"title": "wolf",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `wolf ${text}`
+										},
+										{
+										"title": "joker",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `joker ${text}`
+										},
+										{
+										"title": "dropwater",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `dropwater ${text}`
+									},
+									{
+										"title": "dropwater2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `dropwater2 ${text}`
+									},
+									{
+										"title": "thewall",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `thewall ${text}`
+									},
+									{
+										"title": "neonlight",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neonlight ${text}`
+									},
+									{
+										"title": "natural",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `natural ${text}`
+									},
+									{
+										"title": "carbon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `carbon ${text}`
+									},
+									{
+										"title": "pencil",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `pencil ${text}`
+									},
+									{
+										"title": "blackpink2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpink2 ${text}`
+									},
+										{
+											"title": "neon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neon ${text}`
+										},
+										{
+											"title": "neonlight2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neonlight2 ${text}`
+										},
+										{
+										"title": "toxic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `toxic ${text}`
+									     },
+									{
+										"title": "strawberry",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `strawberry ${text}`
+									     },
+										{
+											"title": "1917",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `1917 ${text}`
+										},
+										{
+										"title": "sci_fi",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sci_fi ${text}`
+									},
+										{
+											"title": "ancient",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `ancient ${text}`
+										},
+										{
+											"title": "fabric",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fabric ${text}`
+										},
+										{
+										"title": "hoorror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `hoorror ${text}`
+									},
+										{
+											"title": "whitebear",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `whitebear ${text}`
+										}
+								]
+							},
+							{
+								"title": "LION LOGO2",
+								"rows": [
+									{
+										"title": "lion2",
+										"description": "Displays The List Of Anonymous Chat Features",
+										"rowId": `lion2 ${text}`
+									}
+								]
+							},
+							{
+								"title": "༺𝐀𝐋𝐈𝐕𝐄༻️",
+								"rows": [
+									{
+										"title": "༺𝐀𝐋𝐈𝐕𝐄༻",
+										"description": "Displays The List Of Credit Of The Bot !!",
+										"rowId": `alive`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+          break
+case 'sindu': {
+ if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
+naze.sendMessage(from, { react: { text: `🎧`, key: m.key }})
+                if (!text) throw `Example : ${prefix + command} story wa anime`
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[0] // Length selector [0] \\RDmd
+                let buf = await getBuffer(anu.thumbnail)
+                let caption = `
+*| ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ |*
+◈━━━━━━━━━━━━━━━◈            
+╒════════════════
+┝ 📝 Title : ${anu.title}
+┝ 🔍 Ext : Search
+┝ 🔗 ID : ${anu.videoId}
+┝ ⏰ Duration : ${anu.timestamp}
+┝ 🌝 Viewers : ${anu.views}
+┝ ⏳ Uploaded : ${anu.ago}
+┝ 🔮 Author : ${anu.author.name}
+┝ 🌐 Channel : ${anu.author.url}
+┝ ⛓️ Description : ${anu.description}
+┝ ✏️ Url : ${anu.url}
+┕────────────
+`
+message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: caption,
+                            imageMessage: message.imageMessage,
+                            hydratedFooterText: `${botname}`,
+                            hydratedButtons: [{
+          urlButton: {
+                  displayText: '🎸YOUTUBE CHANEL🎸',
+                  url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
+          }
+                            }, {
+                            	urlButton: {
+          displayText: `🪀SUPPORT GROUP🪀`, 
+                  url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`
+          }
+                            }, {
+          quickReplyButton: {
+                  displayText: `༺🎬𝐕𝐈𝐃𝐄𝐎🎬༻`,
+                  id: `${prefix}vidiyo ${anu.url}`
+          }
+          }, {
+          quickReplyButton: {
+                  displayText: `༺🎶𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓🎶༻`,
+                  id: `${prefix}ytdoc1 ${anu.url}`
+          }
+           },{
+          quickReplyButton: {
+                  displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
+                  id: `${prefix}ytmp10 ${anu.url}`
+          }
+           }]
+                        }
+                    }
+                
+                }), { userJid: m.chat })
+                XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
 break
+case 'vidiyo': { 
+    naze.sendMessage(from, { react: { text: `📽️`, key: m.key }})    
+        if (!text) return reply(`Example : ${prefix + command} lelena`)
+ let yts = require("yt-search")
+ let search = await yts(text)
+ let anu = search.videos[0]
+ let buttons = [
+ {buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '⚡360p⚡'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '⚡480p⚡'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '⚡720p⚡'}, type: 1}
+ ]
+ let buttonMessage = {
+ image: { url: anu.thumbnail },
+ caption: `*║☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒☬║*
+     
+   📥 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑
+ 
+*┃🎬Title :* ${anu.title} 
+ 
+*┃🎲Duration :* ${anu.timestamp} 
+ 
+*┃🌐Author :* ${anu.author.name} 
+ 
+*┃📃Url :* ${anu.url} 
+
+*┃🔖Runtime :* ${runtime(process.uptime())}
+ 
+*┃BOT NAME :* *☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*
+
+┗━━━━━━━━━❊`,
+ footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+ buttons: buttons,
+ headerType: 4,
+ }
+ naze.sendMessage(m.chat, buttonMessage, { quoted: m })
+ }
+ break
+                            case 'ytmp10': {	 
+naze.sendMessage(from, { react: { text: `🎶`, key: m.key }})   
+                     let { yta } = require('./lib/y2mate')
+                     if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                     if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
+                     let quality = args[1] ? args[1] : '128kbps'
+                     let media = await yta(text, quality)
+                     if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))                
+                     buf = await getBuffer(media.thumb) 
+                     const auddown = await naze.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )
+                     await naze.sendMessage(from, { delete: auddown.key })
+                     const audup = await naze.sendMessage(from , { text: '📤 Uploading Your Song...' }, { quoted: m } )
+                     const aud = await naze.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`}, { quoted: m }) .catch((err) => reply(mess.error))
+                     await naze.sendMessage(from, { delete: audup.key })               
+                     }
+                 break
+case 'ytdoc1': {	    
+naze.sendMessage(from, { react: { text: `📂`, key: m.key }})
+    let { yta } = require('./lib/y2mate')
+    if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+    if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
+    let quality = args[1] ? args[1] : '128kbps'
+    let media = await yta(text, quality)
+    if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))                
+    buf = await getBuffer(media.thumb) 
+    const auddown = await naze.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )
+    await naze.sendMessage(from, { delete: auddown.key })
+    const audup = await naze.sendMessage(from , { text: '📤 Uploading Your Song...' }, { quoted: m } )
+    const aud = await naze.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`}, { quoted: m }) .catch((err) => reply(mess.error))
+    await naze.sendMessage(from, { delete: audup.key })               
+    }
+break
+           case 'videoe': {
+           if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+naze.sendMessage(from, { react: { text: `🎬`, key: m.key }})
+           if (isBan) throw mess.ban
+                // //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)            
+                let { ytv } = require('./lib/y2mate')
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
+                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*The link you provided is not valid*'
+                if (!isInventoryLimit){ addInventoriLimit(m.sender) }
+            if (isLimit < 1) return m.reply(mess.endLimit)
+            kurangLimit(m.sender, 1)
+            m.reply(`*1 limit used*`)
+                let quality = args[1] ? args[1] : '360p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
+                var capti = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎
+🎬🎬🎬🎬🎬🎬🎬🎬🎬*`
+                var buf = await getBuffer(media.thumb)
+                naze.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${capti}` }, { quoted: m })
+                naze.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*Downloading From ${text}*` }, { quoted: m }).catch((err) => m.reply('*error while sending the video*'))
+            }
+                  break
+case 'hi': case 'හායි': {
+    naze.sendMessage(from, { react: { text: `👋`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
+    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
+    caption: `*හායි ${pushname} I AM ALIVE NOW\n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    naze.sendMessagem.chat, buttonMessage, { quoted: m })
+    }
+ break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
